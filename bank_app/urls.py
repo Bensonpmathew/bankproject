@@ -1,0 +1,36 @@
+from django.urls import path
+from .views import *
+urlpatterns=[
+# path('Registration/',register)
+    path('Registration/',register),
+    path('Login/',login),
+    path('index/',ind),
+    path('profile/',profile),
+    path('bankedit/<int:id>',editbank),
+    path('editimage/<int:id>',editim),
+    path('addamount/<int:id>',addmoney),
+    path('success/',success),
+    path('widraw/<int:id>',widrawmoney),
+    path('widrawsuccess/',widrawsuccess),
+    path('Balancecheck/<int:id>',balance),
+    path('Balance Display/',baldis),
+    path('ministatement/<int:id>',ministatement),
+    path('deposit/',deposit),
+    path('withdrawmini/',withdrawmini),
+    path('News/',news),
+    path('adminlogin/',adminlogin),
+    path('adminprofile/',adminprofile),
+    # path('Newsdisplay/',newsdisp),
+    path('Newsuser/',newsuser),
+    path('Newsadmin/',newsdisp),
+    path('Newsedit/<int:id>',newsedit),
+    path('Newsdelete/<int:id>',newsdelete),
+    path('searchtable/',tablesearch),
+    path('Tabledisplay/',tabledisp),
+    path('Wishlist/<int:id>',wish),
+    path('wishdisp/',wishdis),
+    path('Logout/',logout_view),
+    path('forgotpassword/',forgot_password),
+    path('change/<int:id>',change_password),
+
+]

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/c323ca6c65.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:pink;">
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+  <table>
+    <img height="300px" width="500px" src="{% static 'success.jpg' %}" style="margin-left:350px;margin-top:100px;"><br><br>
+    <p style="color:green;font-size:30px;" align="center"><B>{{am}} SUCEESSFULLY ADDED TO BANK ACCOUNT {{ac_num}}</B></p>
+  </table>
+</form>
+
+</body>
+</html>

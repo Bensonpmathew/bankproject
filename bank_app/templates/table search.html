@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<!--    <script src="https://kit.fontawesome.com/c323ca6c65.js" crossorigin="anonymous"></script>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+    <H1 align="center" style="color:blue;"><U><B>Enter Table details here </B></U></H1>
+    <table align="center" style="margin-top:150px;">
+        <tr>
+            <th><label>Name :</label></th>
+            <td> <input type="text" name="name" size="25" class="form-control"><br><br></td>
+        </tr>
+      <tr>
+            <th><label>Age :</label></th>
+            <td> <input type="number" name="age" size="10" class="form-control"><br><br></td>
+        </tr>
+      <tr>
+            <th><label>Number :</label></th>
+            <td> <input type="number" name="number" size="20" class="form-control"><br><br></td>
+        </tr>
+
+        <tr >
+            <td><button style="margin-top:50px;margin-left:50px;" type="submit" class="btn btn-outline-success">Submit</button></td>
+        </tr>
+
+
+
+
+    </table>
+
+
+</form>
+
+</body>
+</html>
